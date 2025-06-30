@@ -1,0 +1,41 @@
+return{
+  "folke/noice.nvim",
+  event = "VeryLazy",
+  dependencies = {
+    "MunifTanjim/nui.nvim",
+    "rcarriga/nvim-notify",
+  },
+  config = function()
+    require("noice").setup({ 
+      timeout = 2000,
+	  presets = {
+        bottom_search = false,        -- hiển thị tìm kiếm ở dưới như cũ
+        command_palette = false,      -- cmdline nằm cùng với popup
+        long_message_to_split = true, -- tin nhắn dài sẽ mở ra ở split
+        lsp_doc_border = true,       -- viền border cho hover/signature
+      },
+      views = {
+        cmdline_popup = {
+          position = {
+            row = "50%",
+            col = "100%",
+          },
+          size = {
+            width = "auto",
+            height = "auto",
+          },
+        },
+      },
+      lsp = {
+        override = {
+          ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+          ["vim.lsp.util.stylize_markdown"] = true,
+          ["cmp.entry.get_documentation"] = true,
+        },
+      },
+    })
+
+    vim.notify = require("notify")
+  end,
+}
+
