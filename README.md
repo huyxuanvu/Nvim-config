@@ -40,7 +40,8 @@ npm
 miniconda3
 ```
 2.Next 
-clone repo and copy folder named `nvim`  into `~/.config`
+clone repo and copy whole files inside folder named `nvim-config`  into `~/.config/nvim` <br>
+Note that: if folders `nvim` ,create it
 ``` https://github.com/huyxuanvu/Nvim-config.git ```
 
 
