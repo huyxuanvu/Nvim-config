@@ -9,10 +9,10 @@ return{
     require("noice").setup({ 
       timeout = 2000,
 	  presets = {
-        bottom_search = false,        -- hiển thị tìm kiếm ở dưới như cũ
-        command_palette = false,      -- cmdline nằm cùng với popup
-        long_message_to_split = true, -- tin nhắn dài sẽ mở ra ở split
-        lsp_doc_border = true,       -- viền border cho hover/signature
+        bottom_search = false,        
+        command_palette = false,      
+        long_message_to_split = true, 
+        lsp_doc_border = true,      
       },
       views = {
         cmdline_popup = {
