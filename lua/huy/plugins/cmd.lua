@@ -32,7 +32,7 @@ return {
         },
       },
       cmdline = {
-        view = "cmdline_popup", -- hoặc "cmdline" nếu bạn thích dạng cổ điển
+        view = "cmdline_popup", 
       },
       lsp = {
         override = {
